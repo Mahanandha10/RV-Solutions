@@ -1,0 +1,161 @@
+/* Footer Starting */
+html{
+    overflow-x: hidden;
+}
+
+.footer {
+    
+    background-color: #ffffff;
+    color: black;
+    padding: 20px 0;
+    
+    box-shadow: 5px 5px 10px gray;
+}
+
+.footer .containerfoot {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.footer .fro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.footer .poplink {
+    /* flex-basis: 33.33%; */
+    padding: 20px;
+    font-size: 16px;
+}
+
+.footer .fcontact {
+
+    padding: 20px;
+}
+
+.footer i {
+    margin-left: 10px;
+}
+
+.footer .certifi {
+    padding: 20px;
+}
+
+.footer .fcontact .i {
+    padding: 10px;
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+.social-icons .fb {
+    color: #0000ee;
+}
+
+.social-icons .lnkd {
+    color: #0A66C2;
+}
+
+.social-icons .yt {
+    color: #c4302b;
+}
+
+
+.footer h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ec1919;
+}
+
+.footer .certifi img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+
+}
+
+.copyright {
+    background: linear-gradient(48deg, #0000ee 0%, #ec1919 72%, #461f72 100%);
+    color: #ffffff;
+    height: 40px;
+    padding: 10px 0;
+    font-size: small;
+    text-align: center;
+    clear: both;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .containerfoot {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer .certifi {
+        flex-basis: 50%;
+    }
+
+    .footer .poplink {
+        flex-basis: 50%;
+    }
+
+    .footer .fcontact {
+        flex-basis: 50%;
+    }
+
+    .copyright {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer .poplink {
+        flex-basis: 100%;
+    }
+
+    .footer .certifi {
+        flex-basis: 100%;
+    }
+
+    .footer .fcontact {
+        flex-basis: 100%;
+    }
+
+    .footer .fro {
+        flex-direction: column;
+    }
+
+    .copyright {
+        flex-basis: 100%;
+        height: fit-content;
+    }
+}

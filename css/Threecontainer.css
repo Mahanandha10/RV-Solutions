@@ -1,0 +1,154 @@
+/*3 container start*/
+.contentrv {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+
+}
+
+.container2 {
+    background-color: #fff;
+}
+
+.doe {
+    border: 2px solid blue;
+    padding: 8px;
+
+}
+
+.container3 {
+
+    border-radius: 8px;
+    margin-left: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 350px;
+    max-width: 58%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.more {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 80px;
+    margin: 0;
+    margin-bottom: 120px;
+}
+
+.img-container1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-container1 img {
+    max-width: 50%;
+
+}
+
+.text-container1 p {
+    font-size: 17px;
+}
+
+.text-container1 span {
+    color: blue;
+}
+
+.text-container1 {
+    padding: 20px;
+    flex: 1;
+}
+
+.text-container1 h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.ceo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ceo:last-child {
+    margin-bottom: 0;
+}
+
+.ceo img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.matter1 {
+    flex: 1;
+}
+
+.matter1 h3 {
+    font-size: 24px;
+}
+
+.matter1 p {
+    font-size: 10px;
+    padding-right: 30px;
+}
+
+.matter1 a {
+    font-size: 16px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .img-container1 {
+        flex-direction: column;
+        /* Stacks image and text on small screens */
+    }
+
+    .img-container1 img {
+        max-width: 100%;
+        /* Full width image on small screens */
+    }
+
+    .container3 {
+        max-width: 100%;
+        /* Stacks containers on small screens */
+        margin: 0 0 20px 0;
+        /* Adds space between rows */
+    }
+
+    .contentrv {
+        flex-direction: column;
+        /* Stacks containers vertically */
+    }
+}
+
+@media (max-width: 576px) {
+    .text-container1 h1 {
+        font-size: 1.25em;
+        /* Slightly smaller text on very small screens */
+    }
+
+    .ceo img {
+        width: 60px;
+        /* Smaller image size on small screens */
+    }
+}
+
+/*3 container ends*/

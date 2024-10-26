@@ -1,0 +1,105 @@
+/*numbers start*/
+/* Numbers Section */
+.rvnumbers {
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.stats {
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    /* Added margins for spacing */
+}
+
+.stat {
+    flex: 1 1 150px;
+    /* Flex item with a minimum width */
+    margin: 20px;
+    /* Spacing between stats */
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    /* Position relative for vertical line */
+}
+
+.stat:hover {
+    transform: scale(1.05);
+    /* Slight scale on hover */
+}
+
+.stat-number {
+    font-size: 30px;
+    font-weight: 900;
+    color: #322b8a;
+}
+
+.stat-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    /* Space below description */
+}
+
+/* Vertical line */
+.stat::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    /* Positioning */
+    top: 10px;
+    /* Start from the top */
+    height: calc(100% - 20px);
+    /* Height of the line */
+    width: 0.1px;
+    /* Width of the line */
+    opacity: 0.1;
+    background-color: black;
+    /* Color of the line */
+}
+
+.stat:last-child::after {
+    display: none;
+    /* Remove line for the last stat */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .rvnumbers {
+        font-size: 3rem;
+    }
+
+    .stat {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .stat::after {
+        right: -5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .rvnumbers {
+        font-size: 2.5rem;
+    }
+
+    .stat-description {
+        font-size: 1.2em;
+    }
+
+    .stat::after {
+        display: none;
+        /* Hide the vertical line on small devices */
+    }
+}
+
+/*numbers ends*/

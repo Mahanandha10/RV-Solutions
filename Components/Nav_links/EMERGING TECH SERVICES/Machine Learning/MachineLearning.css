@@ -1,0 +1,72 @@
+/*header*/
+html {
+    overflow-x: hidden;
+}
+
+.bg-header {
+    background-image: linear-gradient(48deg, rgba(0, 0, 238, 0.8) 0%, rgba(236, 25, 25, 0.8) 72%, rgba(70, 31, 114, 0.8) 100%), url('tid.jpg');
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+
+
+}
+
+.bg-header h1 {
+    font-size: 40px;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Content Section */
+.content-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-section li {
+    list-style-type: number;
+    /* Update for better styling */
+}
+
+.portfolio-section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.portfolio-item li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-item li:last-child {
+    border-bottom: none;
+}
+
+.portfolio-item i {
+    margin-left: 10px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bg-header h1 {
+        font-size: 28px;
+        /* Adjust header size on smaller screens */
+        padding-left: 0;
+        /* Center the header */
+    }
+
+    .portfolio-item {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg-header h1 {
+        font-size: 24px;
+        /* Smaller header for mobile */
+    }
+}

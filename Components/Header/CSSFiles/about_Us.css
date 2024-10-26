@@ -1,0 +1,47 @@
+
+.main_headerbar{
+     width:100%;
+    height: 146px;
+    background: linear-gradient(48deg, #0000ee 0%, #ec1919 72%, #461f72 100%);
+}
+#titleName{
+    color:#ffffff;
+    font-weight:300;
+    padding-left: 120px;
+    padding-top:60px !important ;
+}
+
+/* .header2{
+    margin-left: 150px;
+    border-radius: 8px;
+    height:70vh;
+    vertical-align: middle;
+} */
+.header2 .col-md-10 img{
+   
+    width: 100%;
+    height:70vh;
+    margin-top: 70px;
+    border-radius: 8px;
+
+}
+
+
+@media (max-width: 768px) {
+  .header2 .col-md-10 img{
+    padding-right: 5px;
+  }
+  .para .col-md-10{
+    padding-left:30px;
+  }
+
+}
+@media (max-width: 480px) {
+  .header2 .col-md-10 img{
+    padding-left:10px;
+  }
+  .para .col-md-10{
+  padding-left:20px;
+  }
+
+}

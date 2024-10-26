@@ -1,0 +1,181 @@
+/*gallery starts*/
+.containerg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-left: 5%;
+    padding-right: 12%;
+    background-color: #fff;
+}
+
+.rowg {
+    overflow: hidden;
+}
+
+.containerg .info-area .lifeh {
+    font-size: 2rem;
+}
+
+.containerg .info-area .lifep {
+    font-size: 1.2rem;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.drag-over {
+    border: 2px dashed #333;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.hi-slide {
+    width: 420px;
+    height: 292px;
+    border-radius: 50px;
+    margin: 110px;
+
+}
+
+.hi-slide .hi-prev,
+.hi-slide .hi-next {
+    display: none;
+}
+
+.hi-slide .hi-prev:hover,
+.hi-slide .hi-next:hover {
+    opacity: 1;
+    background-color: white;
+}
+
+.hi-slide .hi-prev {
+    left: 59px;
+}
+
+.hi-slide .hi-prev::before {
+    content: "<";
+}
+
+.hi-slide .hi-next {
+    right: 59px;
+}
+
+.hi-slide .hi-next::before {
+    content: "> ";
+}
+
+.hi-slide>ul {
+    list-style: none;
+    position: relative;
+    width: 840px;
+    height: 292px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.hi-slide>ul>li {
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 33.33%;
+    height: 0;
+    margin-left: -110px;
+    margin-right: -110px;
+    padding: 0;
+    border: 3px solid white;
+    cursor: pointer;
+    background-color: #333;
+}
+
+.hi-slide>ul>li>img {
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.info-area {
+
+    width: 40%;
+
+    padding-left: 60px;
+}
+
+.info-area .edu-btn {
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.info-area .edu-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .containerg {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .info-area {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .hi-slide {
+        padding-left: 120px;
+        border-radius: 50px;
+        margin: 0px;
+        margin-left: 20px;
+
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: absolute;
+        width: 150px;
+        height: 292px;
+        padding-left: 500px;
+        overflow: hidden;
+        padding: 0;
+        margin: 10px;
+    }
+
+    .hi-slide>ul>li {
+        position: absolute;
+        overflow: hidden;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 33.33%;
+        height: 0;
+        margin-left: -110px;
+        margin-right: -110px;
+        padding: 0;
+        border: 3px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>img {
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+/*gallery ends*/

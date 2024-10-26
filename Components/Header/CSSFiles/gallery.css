@@ -1,0 +1,81 @@
+.main_headerbar {
+  width: 100%;
+  height: 146px;
+  background: linear-gradient(48deg, #0000ee 0%, #ec1919 72%, #461f72 100%);
+}
+
+#titleName {
+  color: #ffffff;
+  font-weight: 300;
+  padding-left: 142px;
+  padding-top: 60px !important;
+}
+
+@media (max-width: 480px) {
+  #titleName {
+    padding-left: 70px !important;
+  }
+}
+
+/* Main container styling */
+.bodyContainer {
+  margin-top: 3%;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+
+/* Row layout with Flexbox */
+.gall {
+  width: 160px;
+  flex-direction: row;
+  /*Ensure images align horizontally */
+  gap: 10px;
+  /* Space between images */
+  flex-wrap: wrap;
+  /* Wrap on smaller screens */
+  justify-content: flex-start;
+  /* Align images to the start */
+}
+
+.galle {
+  display: inline-block;
+
+}
+
+/* Image container styling */
+.imageContainer {
+  width: 150px;
+  height: 150px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  /* Box shadow */
+  margin-bottom: 10px;
+  /* Space between rows of images */
+}
+
+/* Image styling */
+.bodyContainer img {
+  padding-top: 10px;
+  width: 135px;
+  /* Make image fill container */
+  height: 140px;
+  /* Make image fill container */
+  object-fit: cover;
+  /* Ensure image covers without distortion */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .imageContainer {
+    width: 120px;
+    /* Reduce size for tablets */
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageContainer {
+    width: 100px;
+    /* Reduce size for mobile devices */
+    height: 100px;
+  }
+}
