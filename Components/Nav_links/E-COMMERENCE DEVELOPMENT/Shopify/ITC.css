@@ -3,8 +3,8 @@
     padding: 30px 0;
     color: white;
     text-align: center;
-   
-    
+
+
 }
 
 .bg-header h1 {
@@ -39,26 +39,3 @@
 .portfolio-item i {
     margin-left: 10px;
 }
-@media (max-width: 768px) {
-    .bg-header h1 {
-        font-size: 28px; /* Adjust header size on smaller screens */
-        padding-left: 0; /* Center the header */
-    }
-
-    .portfolio-item {
-        padding: 0;
-    }
-
-   
-}
-
-@media (max-width: 480px) {
-    .bg-header h1 {
-        font-size: 24px; /* Smaller header for mobile */
-    }
-}
-
-
-
-
-
